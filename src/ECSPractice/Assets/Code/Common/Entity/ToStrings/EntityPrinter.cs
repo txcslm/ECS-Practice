@@ -41,7 +41,7 @@ namespace Code.Common.Entity.ToStrings
           IComponent component = components[index];
           Type type = component.GetType();
 
-          _toStringBuilder.Append(type.GetMethod(nameof(ToString))!.DeclaringType.ImplementsInterface<IComponent>()
+          _toStringBuilder.Append(type.GetMethod(nameof(ToString)).DeclaringType.ImplementsInterface<IComponent>()
             ? component.ToString()
             : type.Name.RemoveComponentSuffix());
 
