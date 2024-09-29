@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatas_byGuid:
+    keys:
+    - 711e6b496b49a3040a1aee1b5b48170d
+    - b9ccc72dfa7d756438b549c5bf57c06d
+    - ddfd99231d771364dbc761ed3bd76aa2
+    - 065f024116c1f0b45924693015f5af9c
+    - 6cf037feda3b5ed4386a78f82c1ab468
+    - ff530b3ec8b3cff429aa51cd44c68243
+    - 58181071ed2b900468b791b96d27ba27
+    - f54d1bd14bd3ca042bd867b519fee8cc
+    - 8d21d8e3966c3c242bd0de9ea8474de7
+    - c36e472547b64d389108c76fd14f79b4
+    - 0fe46fb58c1121347b59e2861b3b5761
+    - 6c7aca9f464f0274283d2d9fa0b54914
+    - 71b25e8fb0e74d7ba288d67c21f40202
+    - 8f39104feaf7430f96338cb2795192dc
+    - b33697fecda3e90499ca64495c3e9d94
+    - 2abc8b4e7e2d41d198c39682c7b67901
+    - 3ca6fdd3f39b59c42be5e5161b3f2fb1
+    - c71862407e3f4bfeb5482203f161636f
+    - 2062e555ab6249d9b710c9be3ed501c5
+    - 90511bdde3c44025aacfb6866a8e5c09
+    - 9512e12e6ffc45c4b275eafd6c15d000
+    - b84c895378db4ae4a928bb39b2858f8e
+    - 8557aacbf09a4e6a84bed17c37f4e72d
+    - fcdabc9add9641fb9b3aded998c6fab7
+    - ab6d5a85dbe9453cae266d4df133bb68
+    - 309838577b52448f9e4358fd61f95826
+    - 9b3dc3897ed2c984e870b384c22c839c
+    - b47f32a6697d95f4bb1a7b605ecf1021
+    - f6ee80e83e6f9a94ca81bd4c067b5733
+    - 5e1d51d56d5f4619b5f840224fcc7f17
+    - 09a5780faae44bac9e5553d5e5842bf7
+    - 6038d5519a484ec988bcc4af308923f7
+    - e1ee086f6a024c75944cbd4e6bcb4c25
+    - 5578c390f60e4b1b8976317b45070d00
+    - f7eac0a3f2e4423cb790f480ec4399a0
+    - df43e9695f3f4e1399521d40ffdc2a17
+    - c153946bfa3a49f6b7251e7c83bf4206
+    - b9a4dc24ba244cd6ba77aff9495c81bd
+    - 42afdb97e6e34e538a70b73f67b8d7aa
+    - f3d94e440aa94caf96a57ee53633b9db
+    - b0dbff46c0a74dbcb698570c8719fd57
+    - ae3fbbb8c9e247f4a97ea853694fabe0
+    - babec4c055d34b10883686ff263c4f14
+    - 3da740f8d52e474ba841ba3c5a8e2d39
+    - 37a6a54950d4495d8a3973307fb75dbb
+    - 936e03783f3242e78b0e089e020c87b6
+    - a92758652f5af9e4eab904912cb37638
+    - 658eaccb926b2cf479126765a02293ee
+    - 022ff011e7a3c4c4b846ae41d1dc9cd5
+    - a960b6808160a044d88067ab067614dd
+    - 7a07fb4b3c68f584f9f950ab229740fe
+    - 4df25328de4516c4caa653417fd9e62b
+    - 139667995c2466b45a4ade42a5bc3b05
+    - 8e218897875438846a17aa2a92889a73
+    - ba4ce772f4c04bd40b7eb2139b1acac5
+    - effa7bce5deaddd4489b7da798a83af4
+    - 666873dc772d11149ab71f8daa2d9b4f
+    - 5fef54de2f9d80f42ba15e70e5519bab
+    - 16a2983afba94c848b60d8619e28df13
+    - 7c036a16df950df4f8cf66303bdf9e4a
+    - cf04157530b612e41874fa56a72eb569
+    - c8c741aafea91004f933899bd77d6048
+    - cfb70642ba4932f46b837f000ace0432
+    - 0f048836f524e13428cabf1ee035f86c
+    - b10c2603ad183834cb50ea28f04f927c
+    values:
+    - colorIndex: 10
+      iconNameOrGuid: cs Script Icon
+    - colorIndex: 2
+      iconNameOrGuid: 
+    - colorIndex: 2
+      iconNameOrGuid: 
+    - colorIndex: 2
+      iconNameOrGuid: 
+    - colorIndex: 3
+      iconNameOrGuid: 
+    - colorIndex: 3
+      iconNameOrGuid: 
+    - colorIndex: 7
+      iconNameOrGuid: 
+    - colorIndex: 2
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 

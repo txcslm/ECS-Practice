@@ -4,34 +4,41 @@ using UnityEngine;
 
 namespace Code.Gameplay.Features.Enemies.Behaviours
 {
-  public class EnemyAnimator : MonoBehaviour, IDamageTakenAnimator
-  {
-    private static readonly int OverlayIntensityProperty = Shader.PropertyToID("_OverlayIntensity");
-    
-    private readonly int _diedHash = Animator.StringToHash("died");
-    
-    public Animator Animator;
-    public SpriteRenderer SpriteRenderer;
-    private Material Material => SpriteRenderer.material;
+	public class EnemyAnimator : MonoBehaviour, IDamageTakenAnimator
+	{
+		private readonly static int OverlayIntensityProperty = Shader.PropertyToID("_OverlayIntensity");
 
-    public void PlayDied() => Animator.SetTrigger(_diedHash);
+		private readonly int _diedHash = Animator.StringToHash("died");
+		private readonly int _movingHash = Animator.StringToHash("IsMoving");
 
-    public void PlayDamageTaken()
-    {
-      if (DOTween.IsTweening(Material))
-        return;
-      
-      Material.DOFloat(0.4f, OverlayIntensityProperty, 0.15f)
-        .OnComplete(() =>
-        {
-          if (SpriteRenderer)
-            Material.DOFloat(0, OverlayIntensityProperty, 0.15f);
-        });
-    }
-    
-    public void ResetAll()
-    {
-      Animator.ResetTrigger(_diedHash);
-    }
-  }
+		public Animator Animator;
+		public SpriteRenderer SpriteRenderer;
+
+		private Material Material => SpriteRenderer.material;
+		
+		public void PlayMove() => 
+			Animator.SetBool(_movingHash, true);
+
+		public void PlayIdle() => 
+			Animator.SetBool(_movingHash, false);
+
+		public void PlayDied() => 
+			Animator.SetTrigger(_diedHash);
+
+		public void PlayDamageTaken()
+		{
+			if (DOTween.IsTweening(Material))
+				return;
+
+			Material.DOFloat(0.4f, OverlayIntensityProperty, 0.15f)
+				.OnComplete(() =>
+				{
+					if (SpriteRenderer)
+						Material.DOFloat(0, OverlayIntensityProperty, 0.15f);
+				});
+		}
+
+		public void ResetAll() =>
+			Animator.ResetTrigger(_diedHash);
+	}
 }

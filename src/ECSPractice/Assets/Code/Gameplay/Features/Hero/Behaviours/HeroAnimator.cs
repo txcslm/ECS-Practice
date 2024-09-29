@@ -6,7 +6,7 @@ namespace Code.Gameplay.Features.Hero.Behaviours
 {
   public class HeroAnimator : MonoBehaviour, IDamageTakenAnimator
   {
-    private static readonly int OverlayIntensityProperty = Shader.PropertyToID("_OverlayIntensity");
+    private readonly static int OverlayIntensityProperty = Shader.PropertyToID("_OverlayIntensity");
     
     private readonly int _isMovingHash = Animator.StringToHash("isMoving");
     private readonly int _attackHash = Animator.StringToHash("attack");
