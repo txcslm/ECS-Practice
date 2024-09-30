@@ -1,4 +1,5 @@
-﻿using Code.Gameplay.Features.Enemies;
+﻿using Code.Common.Destruct;
+using Code.Gameplay.Features.Enemies;
 using Code.Gameplay.Features.Hero;
 using Code.Gameplay.Features.Movement;
 using Code.Gameplay.Input;
@@ -17,6 +18,8 @@ namespace Code.Gameplay
       Add(systems.Create<HeroFeature>());
       
       Add(systems.Create<MovementFeature>());
+      
+      Add(systems.Create<ProcessDestructedFeature>());
     }
   }
 }

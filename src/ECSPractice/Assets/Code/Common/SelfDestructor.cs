@@ -8,7 +8,7 @@ namespace Code.Common
 
     private void Update()
     {
-      Countdown -= UnityEngine.Time.deltaTime;
+      Countdown -= Time.deltaTime;
       if (Countdown <= 0)
         Destroy(gameObject);
     }

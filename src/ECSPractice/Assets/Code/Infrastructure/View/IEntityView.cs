@@ -5,7 +5,8 @@ namespace Code.Infrastructure.View
 	public interface IEntityView
 	{
 		GameEntity Entity { get; }
-		GameObject GameObject { get; }
+		
+		GameObject gameObject { get; }
 
 		void SetEntity(GameEntity entity);
 

@@ -26,7 +26,7 @@ namespace Code.Gameplay.Features.Movement.Systems
       }
     }
 
-    private float FaceDirection(GameEntity mover) =>
+    private static float FaceDirection(GameEntity mover) =>
       mover.Direction.x <= 0 
         ? -1 
         : 1;
