@@ -7,19 +7,19 @@ using Code.Infrastructure.Systems;
 
 namespace Code.Gameplay
 {
-  public class BattleFeature : Feature
-  {
-    public BattleFeature(ISystemFactory systems)
-    {
-      Add(systems.Create<InputFeature>());
-      
-      Add(systems.Create<EnemyFeature>());
-      
-      Add(systems.Create<HeroFeature>());
-      
-      Add(systems.Create<MovementFeature>());
-      
-      Add(systems.Create<ProcessDestructedFeature>());
-    }
-  }
+	public class BattleFeature : Feature
+	{
+		public BattleFeature(ISystemFactory systems)
+		{
+			Add(systems.Create<InputFeature>());
+
+			Add(systems.Create<EnemyFeature>());
+
+			Add(systems.Create<HeroFeature>());
+
+			Add(systems.Create<MovementFeature>());
+
+			Add(systems.Create<ProcessDestructedFeature>());
+		}
+	}
 }

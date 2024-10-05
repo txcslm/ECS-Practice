@@ -79,21 +79,22 @@ MonoBehaviour:
     - cfb70642ba4932f46b837f000ace0432
     - 0f048836f524e13428cabf1ee035f86c
     - b10c2603ad183834cb50ea28f04f927c
+    - 5db965758c13d8046af0c3fdae6dea7a
     values:
     - colorIndex: 10
-      iconNameOrGuid: cs Script Icon
+      iconNameOrGuid: ComputeShader Icon
+    - colorIndex: 2
+      iconNameOrGuid: dae505012cf24dc49bda2b358f9907d6
     - colorIndex: 2
       iconNameOrGuid: 
     - colorIndex: 2
-      iconNameOrGuid: 
-    - colorIndex: 2
-      iconNameOrGuid: 
+      iconNameOrGuid: dae505012cf24dc49bda2b358f9907d6
     - colorIndex: 3
       iconNameOrGuid: 
     - colorIndex: 3
       iconNameOrGuid: 
     - colorIndex: 7
-      iconNameOrGuid: 
+      iconNameOrGuid: none
     - colorIndex: 2
       iconNameOrGuid: 
     - colorIndex: 10
@@ -210,3 +211,5 @@ MonoBehaviour:
       iconNameOrGuid: 
     - colorIndex: 10
       iconNameOrGuid: 
+    - colorIndex: 0
+      iconNameOrGuid: dae505012cf24dc49bda2b358f9907d6

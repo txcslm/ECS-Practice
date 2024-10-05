@@ -2,21 +2,22 @@ using System;
 using Entitas;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Code.Infrastructure.View
 {
 	public abstract class EntityDependant : MonoBehaviour
 	{
-		public EntityBehaviour EntityView;
+		public EntityBinder EntityBinder;
 		
-		public GameEntity  Entity => EntityView != null ? EntityView.Entity : null;
+		public GameEntity  Entity => EntityBinder != null ? EntityBinder.Entity : null;
 
 		private void Awake()
 		{
-			if (!EntityView)
+			if (!EntityBinder)
 			{
-				EntityView = GetComponent<EntityBehaviour>();
+				EntityBinder = GetComponent<EntityBinder>();
 			}
 		}
 	}

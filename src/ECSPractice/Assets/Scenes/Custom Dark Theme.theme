@@ -1,0 +1,35 @@
+{
+  "name": "Custom Dark Theme",
+  "dark": true,
+  "editorScheme": "CustomScheme",
+  "colors": {
+    "Editor.background": "#1c1c25",
+    "Editor.foreground": "#ffffff",
+    "Editor.selectionBackground": "#3e3e42",
+    "Editor.selectionForeground": "#ffffff",
+    "ToolWindow.background": "#2b2b30",
+    "ToolWindow.foreground": "#ffffff",
+    "ToolWindow.titleForeground": "#ffffff",
+    "ToolWindow.borderColor": "#383c4a",
+    "ToolWindow.buttonColor": "#3e3e42",
+    "ToolWindow.buttonHoverColor": "#4a4a50",
+    "Tree.background": "#2b2b30",
+    "Tree.foreground": "#dcdcdc",
+    "Tree.selectionBackground": "#3e3e42",
+    "Tree.selectionForeground": "#ffffff",
+    "Tree.selectedNodeBackground": "#3e3e42",
+    "Tree.selectedNodeForeground": "#ffffff",
+    "EditorPane.background": "#1c1c25",
+    "EditorPane.foreground": "#ffffff",
+    "ToolWindow.activeTabBackground": "#3e3e42",
+    "ToolWindow.inactiveTabBackground": "#2b2b30"
+  },
+  "ui": {
+    "Component.borderColor": "#383C4A",
+    "Component.focusedBorderColor": "#528BFF",
+    "Component.hoverBackgroundColor": "#3e3e42",
+    "Component.selectedBackgroundColor": "#4a4a50",
+    "Component.selectedForegroundColor": "#ffffff",
+    "Component.disabledForegroundColor": "#5C6370"
+  }
+}

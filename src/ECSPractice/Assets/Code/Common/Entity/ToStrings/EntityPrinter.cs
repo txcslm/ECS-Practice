@@ -20,40 +20,40 @@ namespace Code.Common.Entity.ToStrings
 
     public string BuildToString()
     {
-      if (_toStringCache == null)
+      if (_toStringCache != null)
+        return _toStringCache;
+      
+      _toStringBuilder ??= new StringBuilder();
+
+      _toStringBuilder.Length = 0;
+
+      IComponent[] components = _entity.GetComponents();
+
+      if (components.Length == 0) // do not set _toStringCache this time since components seem to be initialized later o_O
+        return "No components";
+
+      _toStringBuilder.Append($"{_entity.EntityName(components)}(");
+
+      int num = components.Length - 1;
+
+      for (int index = 0; index < components.Length; ++index)
       {
-        if (_toStringBuilder == null)
-          _toStringBuilder = new StringBuilder();
+        IComponent component = components[index];
+        Type type = component.GetType();
 
-        _toStringBuilder.Length = 0;
+        if (type.GetMethod(nameof(ToString))!.DeclaringType.ImplementsInterface<IComponent>())
+          _toStringBuilder.Append(component);
+        else
+          _toStringBuilder.Append(type.Name.RemoveComponentSuffix());
 
-        IComponent[] components = _entity.GetComponents();
-
-        if (components.Length == 0) // do not set _toStringCache this time since components seem to be initialized later o_O
-          return "No components";
-
-        _toStringBuilder.Append($"{_entity.EntityName(components)}(");
-
-        int num = components.Length - 1;
-
-        for (int index = 0; index < components.Length; ++index)
-        {
-          IComponent component = components[index];
-          Type type = component.GetType();
-
-          _toStringBuilder.Append(type.GetMethod(nameof(ToString)).DeclaringType.ImplementsInterface<IComponent>()
-            ? component.ToString()
-            : type.Name.RemoveComponentSuffix());
-
-          if (index < num)
-            _toStringBuilder.Append(", ");
-        }
-
-        _toStringBuilder.Append($")(*{_entity.retainCount})");
-        _toStringCache = _toStringBuilder.ToString();
-
-        _oldBaseToStringCache = _entity.BaseToString();
+        if (index < num)
+          _toStringBuilder.Append(", ");
       }
+
+      _toStringBuilder.Append($")(*{_entity.retainCount})");
+      _toStringCache = _toStringBuilder.ToString();
+
+      _oldBaseToStringCache = _entity.BaseToString();
 
       return _toStringCache;
     }

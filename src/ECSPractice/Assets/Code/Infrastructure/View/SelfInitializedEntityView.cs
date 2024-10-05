@@ -1,13 +1,15 @@
 using Code.Common.Entity;
 using Code.Infrastructure.Identifiers;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace Code.Infrastructure.View
 {
 	public class SelfInitializedEntityView : MonoBehaviour
 	{
-		public EntityBehaviour EntityBehaviour;
+		public EntityBinder EntityBinder;
+		
 		private IIdentifierService _identifier;
 
 		[Inject]
@@ -19,7 +21,7 @@ namespace Code.Infrastructure.View
 			GameEntity entity = CreateEntity.Empty()
 				.AddId(_identifier.Next());
 			
-			EntityBehaviour.SetEntity(entity);
+			EntityBinder.SetEntity(entity);
 		}
 	}
 }
